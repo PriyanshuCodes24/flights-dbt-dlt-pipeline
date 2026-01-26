@@ -13,8 +13,6 @@ This project showcases **modern data engineering practices** including increment
 
 The pipeline follows the **Medallion Architecture**, progressively refining data from raw files to analytics-ready tables:
 
-![Medallion Architecture](https://www.databricks.com/wp-content/uploads/2023/07/delta-lake-medallion-architecture-2.png)
-
 ### Data Flow by Layer
 
 1. **Staging Layer**  
@@ -31,13 +29,14 @@ The pipeline follows the **Medallion Architecture**, progressively refining data
    - Type casting & normalization  
    - **SCD Type 1 CDC** on dimensions using `create_auto_cdc_flow`  
    - Produces trusted Silver tables
+   - ### Silver Layer Pipeline Overview
+![Silver Pipeline](./Silver_Data_Ingestion_DLT_Pipeline.png)
 
 4. **Gold Layer — Analytics Data Mart**  
    - Dimension tables with surrogate keys  
    - Incremental merges  
    - Star schema modeling  
    - Fact table joins Silver data with Gold dimensions
-
 ---
 
 ## 🧱 Key Technologies
