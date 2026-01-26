@@ -1,7 +1,5 @@
 # ✈️ Flights Data Pipeline with DLT & Databricks
 
-[![Ask DeepWiki](https://devin.ai/assets/askdeepwiki.png)](https://deepwiki.com/PriyanshuCodes24/flights-dbt-dlt-pipeline)
-
 A production-style, end-to-end **data engineering platform** built on **Databricks** using **Delta Live Tables (DLT)**, **Auto Loader**, and **Delta Lake**.  
 This pipeline demonstrates transforming raw flight booking data into a governed, analytics-ready **star schema** using a scalable **Medallion Architecture (Bronze → Silver → Gold)**.
 
